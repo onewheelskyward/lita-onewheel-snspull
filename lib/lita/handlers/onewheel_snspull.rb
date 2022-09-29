@@ -6,7 +6,8 @@ module Lita
     class OnewheelSnspull < Handler
       http.post '/stabled', :handle_stabled
 
-      def handle_stabled(response)
+      def handle_stabled(request, response)
+        print request.inspect
         print response.inspect
       end
 
