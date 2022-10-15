@@ -7,8 +7,9 @@ module Lita
       http.post '/stabled', :handle_stabled
 
       def handle_stabled(request, response)
+        print request['env'].inspect
         print request.inspect
-        print response.inspect
+        # print response.inspect
       end
 
       Lita.register_handler(self)
